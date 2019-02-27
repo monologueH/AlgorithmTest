@@ -7,6 +7,17 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>selectionSort</title>
 </head>
+<style>
+  #sortResult {}
+
+  .cell {
+    width: 100px;
+    height: 20px;
+    line-height: 24px;
+    font-size: 20px;
+    display: inline-block;
+  }
+</style>
 
 <body>
   <h1 id='sortResult'></h1>
@@ -14,7 +25,7 @@
 <script src="./utils.js"></script>
 <script src="./sortFunc.js"></script>
 <script>
-  let arr = Utils.generateRandomArray(5, 0, 5)
+  let arr = Utils.generateRandomArray(100, 0, 1000)
   let result = Sort.selectionSort(arr)
   Utils.printArray(result)
 

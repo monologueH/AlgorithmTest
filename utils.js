@@ -19,8 +19,12 @@ const Utils = {
     let sortResult = document.querySelector('#sortResult')
     let result = ''
     for (let i = 0; i < arr.length; i++) {
-      result += arr[i] + '&nbsp&nbsp&nbsp&nbsp'
+      result += '<div class="cell">' + arr[i] + '</div>'
+      if ((i + 1) % 10 === 0) {
+        result += '<br>'
+      }
     }
+
     sortResult.innerHTML = result
   }
 }

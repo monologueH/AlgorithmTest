@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>selectionSort</title>
+</head>
+
+<body>
+  <h1 id='sortResult'></h1>
+</body>
+<script src="./utils.js"></script>
+<script src="./sortFunc.js"></script>
+<script>
+  let arr = Utils.generateRandomArray(5, 0, 5)
+  let result = Sort.selectionSort(arr)
+  Utils.printArray(result)
+
+</script>
+
+</html>

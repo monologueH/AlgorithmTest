@@ -1,1 +1,1 @@
-# AlgorithmTest
+# AlgorithmTest for javascript
